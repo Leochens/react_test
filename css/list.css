@@ -14,7 +14,7 @@ header{
     padding: 0; 
     width: 100%;
     margin: 0;
-    height: 50px;
+    height: 55px;
     background-color: #303030;
     position: fixed;
     top: 0;
@@ -42,10 +42,11 @@ header img{
 
 section.main{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 ul.list{
   width: 100%;
+  
 }
 
 li.list_item{
@@ -57,15 +58,19 @@ li.list_item{
     height: 65px;
    
 }
+li.list_item:hover{
+    background-color: #eee;
+}
 li.list_item span.photo{
     display: inline-block;
     width: 65px;
+
     overflow: hidden;
-    margin-right:10px;
-    margin-left: 10px;;
+    margin: 10px;
 }
 .photo img{
     width: 100%;height:100%;
+    margin-top: 3px;
 }
 li.list_item span.time{
     float: right;
@@ -109,7 +114,8 @@ li.tab_item{
     text-align: center;
     color: #888;
 }
-li.tab_item:hover ,li.tab_item object:hover{
+
+.tab_item:hover{
+   
     color: green;
 }
-
