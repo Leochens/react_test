@@ -1,3 +1,9 @@
+/**
+    Leochens 2018.7.16
+*/
+
+
+/*General Begin*/
 html,body{
     margin: 0;
     padding: 0;
@@ -9,7 +15,9 @@ ul,li,ol{
     margin: 0;padding: 0;
     list-style: none;
 }
+/*General End*/
 
+/*Head Begin*/
 header{
     padding: 0; 
     width: 100%;
@@ -39,7 +47,10 @@ header img{
     width: 20px;
     height: 20px;
 }
+/*Head End*/
 
+
+/*Message List Begin*/
 section.main{
     width: 100%;
     margin-top: 55px;
@@ -92,7 +103,10 @@ li.content{
     margin-top: 10px;;
     color: #888;
 }   
+/*Message List End*/
 
+
+/*Tabs Begin*/
 footer{
     position: fixed;
     border-top:  1px solid #ddd;
@@ -119,3 +133,4 @@ li.tab_item{
    
     color: green;
 }
+/*Tabs End*/

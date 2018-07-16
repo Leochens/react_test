@@ -1,15 +1,14 @@
-.box1{
+.box {
     border: 3px solid red;
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+    width:1000px;
+    height: 800px;
     margin: 20px;
+    vertical-align: middle;
 }
-.box1::before{
-    content: "";
-    display: block;
-    width: 100px;
-    height: 3px;
-    background-color: blue;
-
+.box2{
+    border:2px solid blue;
+    width: 100px;;
+    height: 500px;
+    vertical-align: middle;
+    display: inline-block;
 }
