@@ -1,0 +1,32 @@
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+ul,li,ol{
+    margin: 0;padding: 0;
+    list-style: none;
+}
+
+ul.list{
+    border:1px solid transparent;
+    border-bottom-color: #ddd;
+}
+li.list_item{
+    margin-bottom: 10px;
+    background-color: #eee;
+    width: 100%;
+    height: 60px;
+
+}
+
+
+li.user_name{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+li.content{
+    font-size: 12px;
+}   
+
