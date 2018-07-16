@@ -1,0 +1,29 @@
+*{
+ /*   font-size: 20px;*/
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    
+}
+
+ul,ol,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 60px;
+    background-color: #303030;
+    color: #ffffff;
+}
+span.title{
+
+}
+
+
+
+
+
