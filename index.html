@@ -51,7 +51,7 @@
                     <img class="pic"  src="./img/u1.jpg" alt="">
                 </span>
                 <ul class="info">
-                    <li class="user_name"> Leochens</li>
+                    <li class="user_name">Leochens</li>
                     <li class="content">任务成功完成[拍手]</li>
                 </ul>
                 <span class="time">昨天</span>
@@ -61,7 +61,7 @@
                     <img class="pic" src="./img/u2.jpg" alt="">
                 </span>
                 <ul class="info">
-                    <li class="user_name"> 大辉</li>
+                    <li class="user_name">大辉</li>
                     <li class="content">吃午饭了吗</li>
                 </ul>
                 <span class="time">12:51</span>
@@ -120,44 +120,45 @@
 
 
         alert("点击单个item可以获得单个item的各个属性，点击微信tab可以获取全部的")
-        class Message {
-
-        constructor(user_name, content, time, photo) {
-            this.user_name = user_name
-            this.content = content
-            this.time = time
-            this.photo = photo
-        }
-        setMessage(user_name, content, time, photo) {
-            this.user_name = user_name
-            this.content = content
-            this.time = time
-            this.photo = photo
-        }
-        // getMessage(){   //set方法会出错      
-        //     msg = {
-        //         "img":this.photo,
-        //         "title":this.user_name,
-        //         "description":this.content,
-        //         "time":this.time
-        //     }
-        //     console.log( msg)
-        //     return msg
-        // }
-        getMessage() {
-
-            console.log({
-                "img": this.photo,
-                "title": this.user_name,
-                "description": this.content,
-                "time": this.time
-            })
-            
-        }
 
 
+        // Message
+        class Message {         
+
+            constructor(user_name, content, time, photo) {
+                this.user_name = user_name
+                this.content = content
+                this.time = time
+                this.photo = photo
+            }
+            setMessage(user_name, content, time, photo) {
+                this.user_name = user_name
+                this.content = content
+                this.time = time
+                this.photo = photo
+            }
+            // getMessage(){   //set方法会出错      
+            //     msg = {
+            //         "img":this.photo,
+            //         "title":this.user_name,
+            //         "description":this.content,
+            //         "time":this.time
+            //     }
+            //     console.log( msg)
+            //     return msg
+            // }
+            getMessage() {
+
+                console.log({
+                    "img": this.photo,
+                    "title": this.user_name,
+                    "description": this.content,
+                    "time": this.time
+                })
+             }
         }
-        function showInConsole() {
+
+        function showInConsole() {                      //打印所有的items
             let U_set = []
 
             //打印item
@@ -203,7 +204,7 @@
 
 
 
-            console.log("-------------------------Message类-------------------------")
+            console.log("---------------------------Message类-------------------------")
 
            
 
@@ -218,7 +219,8 @@
 
         }
    
-        function showItemInConsole(d)
+
+        function showItemInConsole(d)           //打印单独的item
         {
             let title = d.getElementsByClassName('user_name')[0].innerHTML
 
@@ -234,7 +236,7 @@
             console.log("img "+img)
 
 
-
+            //调用Message类做测试
             let msg = new Message(title,description,time,img)
             msg.getMessage()
         }
