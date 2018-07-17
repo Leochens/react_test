@@ -190,6 +190,7 @@ const sum=(x,y)=>{
 
 
 // HOMEWORK
+
 //1.  打印微信item （title description time） 到控制台
 //2.  把title放到一个数组里 然后把title变成 id_title 的形式 0_Leochens 只在数组中操作即可 不用修改页面 
 //3.  把item变成Message对象  { 私有(img ， title) descreption time  } 需要 get 和 set 

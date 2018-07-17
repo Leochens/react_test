@@ -122,9 +122,7 @@ ul.tab{
     height: 60px;
 }
 li.tab_item{
-    display: inline-block;
-    line-height: 100%;
-    width: 25%;
+   flex: 1;
     text-align: center;
     color: #888;
 }
