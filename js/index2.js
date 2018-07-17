@@ -75,7 +75,7 @@ let arr = [1,2,3,4];
  *      x.b
  *      x["b"]
  * 3.父子键重复
- *      无影响
+ *      无影响 
  *      原型链 
  */
 
@@ -168,7 +168,9 @@ const sum=(x,y)=>{
      }
  }
 
-
+let u = new User("ZHL")
+u.getUserName()
+u.setUserName("LL")
 /**
  * 5. 定义一只小狗
  *   sayHello(name){}
