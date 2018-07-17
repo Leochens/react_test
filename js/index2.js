@@ -201,5 +201,41 @@ u.setUserName("LL")
 
 
 
+class Animals{
+    constructor(name){
+        this.name = name
+    }
+    setAnimalName(newName)
+    {
+        this.name = newName
+    }
+    getAnimalName(){
+        console.log(this.name)
+        return this.name
+    }
+}
+class Dog extends Animals{
+    constructor(name,ownerName)
+    {
+        super(name)
+        this.ownerName = ownerName
+    }
+    
+    sayHello()
+    {
+        console.log(this.name+" say Hello to "+this.ownerName)
+    }
+    getOwnerName()
+    {
+        console.log(this.ownerName)
+        return this.ownerName;
+    }
+    setOwnerName(newOwnerName)
+    {
+        this.ownerName = newOwnerName
+    }
+}
 
+dog = new Dog("poppy","zhl")
+dog.sayHello()
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,233 +12,233 @@
         Date:   2018.7.16
     -->
 </head>
+
 <body>
 
 
-<!--The Head of The Page Begin-->
-<header>
-    <span class="title">
-        微信
-    </span>
-    <div class="wraper">
-        <span class="search">
-                    <img src="./img/search.png" alt="">
-                </span>
-        <span class="more">
+    <!--The Head of The Page Begin-->
+    <header>
+        <span class="title">
+            微信
+        </span>
+        <div class="wraper">
+            <span class="search">
+                <img src="./img/search.png" alt="">
+            </span>
+            <span class="more">
                 <img src="./img/Add.png" alt="">
             </span>
-    </div>
-</header>
-<!--The Head of The Page End-->
+        </div>
+    </header>
+    <!--The Head of The Page End-->
 
 
-<!--Message List Begin-->
-<section class="main">
-<ul class="list">
-    <li class="list_item">
-            <span class="photo"><img src="./img/dyh.png" alt=""></span>
-            <ul class="info">
-                <li class="user_name">订阅号</li>
-                <li class="content">河大青年:放假啦~~~</li>
-            </ul>
-            <span class="time">9:04</span>
-        </li>
-    <li class="list_item">
-        <span class="photo"><img src="./img/u1.jpg" alt=""></span>
-        <ul class="info">
-            <li class="user_name"> Leochens</li>
-            <li class="content">任务成功完成[拍手]</li>
+    <!--Message List Begin-->
+    <section class="main">
+        <ul class="list">
+            <li class="list_item" onclick="showItemInConsole(this)">
+                <span class="photo">
+                    <img class="pic" src="./img/dyh.png" alt="">
+                </span>
+                <ul class="info">
+                    <li class="user_name">订阅号</li>
+                    <li class="content">河大青年:放假啦~~~</li>
+                </ul>
+                <span class="time">9:04</span>
+            </li>
+            <li class="list_item" onclick="showItemInConsole(this)">
+                <span class="photo">
+                    <img class="pic"  src="./img/u1.jpg" alt="">
+                </span>
+                <ul class="info">
+                    <li class="user_name"> Leochens</li>
+                    <li class="content">任务成功完成[拍手]</li>
+                </ul>
+                <span class="time">昨天</span>
+            </li>
+            <li class="list_item" onclick="showItemInConsole(this)">
+                <span class="photo">
+                    <img class="pic" src="./img/u2.jpg" alt="">
+                </span>
+                <ul class="info">
+                    <li class="user_name"> 大辉</li>
+                    <li class="content">吃午饭了吗</li>
+                </ul>
+                <span class="time">12:51</span>
+            </li>
+            <li class="list_item" onclick="showItemInConsole(this)">
+                    <span class="photo">
+                        <img class="pic" src="./img/u3.jpg" alt="">
+                    </span>
+                    <ul class="info">
+                        <li class="user_name">李凯</li>
+                        <li class="content">我看到你了今天。</li>
+                    </ul>
+                    <span class="time">昨天</span>
+                </li>
+
         </ul>
-        <span class="time">昨天</span>
-    </li>
-    <li class="list_item">
-        <span class="photo"><img src="./img/u2.jpg" alt=""></span>
-        <ul class="info">
-            <li class="user_name"> 大辉</li>
-            <li class="content">吃午饭了吗</li>
+
+    </section>
+    <!--Message List End-->
+
+
+    <!--Four Tabs Begin -->
+    <footer>
+        <ul class="tab">
+            <li onclick="showInConsole()" class="tab_item">
+                <div>
+                    <img src="./img/wx.png" alt="">
+                </div>
+                微信
+            </li>
+            <li class="tab_item">
+                <div>
+                    <img src="./img/phone-number.png" alt="">
+                </div>
+                通讯录
+            </li>
+            <li class="tab_item">
+                <div>
+                    <img src="./img/find.png" alt="">
+                </div>
+                发现
+            </li>
+            <li class="tab_item">
+                <div>
+                    <img src="./img/me.png" alt="">
+                </div>
+                我
+            </li>
         </ul>
-        <span class="time">12:51</span>
-    </li>   
-    <li class="list_item">
-        <span class="photo"><img src="./img/u3.jpg" alt=""></span>
-        <ul class="info">
-            <li class="user_name"> 豆丁</li>
-            <li class="content">什么时候回来？[凝视] </li>
-        </ul>
-        <span class="time">13:21</span>
-    </li>
-    <li class="list_item">
-            <span class="photo"><img src="./img/u1.jpg" alt=""></span>
-            <ul class="info">
-                <li class="user_name"> Leochens</li>
-                <li class="content">任务成功完成[拍手]</li>
-            </ul>
-            <span class="time">9:04</span>
-        </li>
-    <li class="list_item">
-        <span class="photo"><img src="./img/u2.jpg" alt=""></span>
-        <ul class="info">
-            <li class="user_name"> 大辉</li>
-            <li class="content">吃午饭了吗</li>
-        </ul>
-        <span class="time">12:51</span>
-    </li>   
-    <li class="list_item">
-        <span class="photo"><img src="./img/u3.jpg" alt=""></span>
-        <ul class="info">
-            <li class="user_name"> 豆丁</li>
-            <li class="content">什么时候回来？[凝视] </li>
-        </ul>
-        <span class="time">13:21</span>
-    </li>
-    <li class="list_item">
-            <span class="photo"><img src="./img/u1.jpg" alt=""></span>
-            <ul class="info">
-                <li class="user_name"> Leochens</li>
-                <li class="content">任务成功完成[拍手]</li>
-            </ul>
-            <span class="time">9:04</span>
-        </li>
-        <li class="list_item">
-            <span class="photo"><img src="./img/u2.jpg" alt=""></span>
-            <ul class="info">
-                <li class="user_name"> 大辉</li>
-                <li class="content">吃午饭了吗</li>
-            </ul>
-            <span class="time">12:51</span>
-        </li>   
-        <li class="list_item">
-            <span class="photo"><img src="./img/u3.jpg" alt=""></span>
-            <ul class="info">
-                <li class="user_name"> 豆丁</li>
-                <li class="content">什么时候回来？[凝视] </li>
-            </ul>
-            <span class="time">13:21</span>
-        </li>
+    </footer>
+    <!--Four Tabs End -->
+
+
+
+    <script>
+
+
+        alert("点击单个item可以获得单个item的各个属性，点击微信tab可以获取全部的")
+        class Message {
+
+        constructor(user_name, content, time, photo) {
+            this.user_name = user_name
+            this.content = content
+            this.time = time
+            this.photo = photo
+        }
+        setMessage(user_name, content, time, photo) {
+            this.user_name = user_name
+            this.content = content
+            this.time = time
+            this.photo = photo
+        }
+        // getMessage(){   //set方法会出错      
+        //     msg = {
+        //         "img":this.photo,
+        //         "title":this.user_name,
+        //         "description":this.content,
+        //         "time":this.time
+        //     }
+        //     console.log( msg)
+        //     return msg
+        // }
+        getMessage() {
+
+            console.log({
+                "img": this.photo,
+                "title": this.user_name,
+                "description": this.content,
+                "time": this.time
+            })
             
-</ul>
-
-</section>
-<!--Message List End-->
-
-
-<!--Four Tabs Begin -->
-<footer>
-    <ul class="tab">
-        <li onclick="showInConsole()" class="tab_item"><div><img src="./img/wx.png" alt=""></div>
-            微信
-        </li>
-        <li class="tab_item"><div><img src="./img/phone-number.png" alt=""></div>
-            通讯录
-        </li>
-        <li class="tab_item"><div><img src="./img/find.png" alt=""></div>
-            发现
-        </li>
-        <li class="tab_item"><div><img src="./img/me.png" alt=""></div>
-            我
-        </li>
-    </ul>
-</footer>
-<!--Four Tabs End -->
-
-
-
-<script>
-    function showInConsole(){
-        let U_set = [];
-
-        //打印item
-        
-        //打印所有的用户名
-        console.log("-------------------------打印所有的用户名--------------------------------------------------")
-        var user_name_set = document.getElementsByClassName("user_name");
-        for(let i=0;i<user_name_set.length;i++)
-        {
-            //console.log(user_name_set[i].firstChild.nodeValue)
-            console.log(user_name_set[i].innerHTML)
-            U_set.push(user_name_set[i].innerHTML)
         }
-        //打印所有的消息内容
-        console.log("-------------------------打印所有的消息内容-------------------------")
 
-        var content_set = document.getElementsByClassName("content");
-        for(let i=0;i<content_set.length;i++)
-        {
-
-            console.log(content_set[i].innerHTML)
-        }
-        
-        //打印所有的消息时间
-        console.log("-------------------------打印所有的消息时间-------------------------")
-        var time_set = document.getElementsByClassName("time");
-        for(let i=0;i<time_set.length;i++)
-        {
-
-            console.log(time_set[i].innerHTML)
-        }  
-        //打印所有的头像链接
-        console.log("-------------------------打印所有的头像链接-------------------------")
-        var photo_set = document.getElementsByClassName("photo");
-        for(let i=0;i<photo_set.length;i++)
-        {
-            console.log(photo_set[i].firstChild.getAttribute('src'))
-        }  
-        //2.把title放到一个数组里 然后把title变成 id_title 的形式 0_Leochens 只在数组中操作即可 不用修改页面 
-        console.log(U_set.map((it,id)=>{
-            return id+'_'+it
-        }))
-    
-
-
-        console.log("-------------------------Message类-------------------------")
-
-        class Message{
-                
-                constructor(user_name,content,time,photo){
-                    this.user_name=user_name
-                    this.content=content
-                    this.time = time
-                    this.photo = photo
-                }
-                setMessage(user_name,content,time,photo){
-                    this.user_name=user_name
-                    this.content=content
-                    this.time = time
-                    this.photo = photo 
-                    } 
-                // getMessage(){   //set方法会出错      
-                //     msg = {
-                //         "img":this.photo,
-                //         "title":this.user_name,
-                //         "description":this.content,
-                //         "time":this.time
-                //     }
-                //     console.log( msg)
-                //     return msg
-                // }
-                getMessage(){
-                   
-                    console.log( {
-                        "img":this.photo,
-                        "title":this.user_name,
-                        "description":this.content,
-                        "time":this.time
-                    })
-                    return msg
-                }
-                  
 
         }
-        
-        let msg = new Message("Leochens","hahahaha","12:59","pppic.png")
-        console.log("默认的值 ")
-        msg.getMessage()
-        console.log("用户设置的值 ")
+        function showInConsole() {
+            let U_set = []
 
-        msg.setMessage("UserA","Hello World","13.08","hello.png")
-        msg.getMessage()
+            //打印item
 
-    }
-</script>
+            //打印所有的用户名
+            console.log("-------------------------打印所有的用户名--------------------------------------------------")
+            var user_name_set = document.getElementsByClassName("user_name")
+            for (let i = 0; i < user_name_set.length; i++) {
+                //console.log(user_name_set[i].firstChild.nodeValue)
+                console.log(user_name_set[i].innerHTML)
+                U_set.push(user_name_set[i].innerHTML)
+            }
+            //打印所有的消息内容
+            console.log("-------------------------打印所有的消息内容-------------------------")
+
+            var content_set = document.getElementsByClassName("content")
+            for (let i = 0; i < content_set.length; i++) {
+
+                console.log(content_set[i].innerHTML)
+            }
+
+            //打印所有的消息时间
+            console.log("-------------------------打印所有的消息时间-------------------------")
+            var time_set = document.getElementsByClassName("time")
+            for (let i = 0; i < time_set.length; i++) {
+
+                console.log(time_set[i].innerHTML)
+            }
+            //打印所有的头像链接
+            console.log("-------------------------打印所有的头像链接-------------------------")
+            var photo_set = document.getElementsByClassName("pic")
+            for (let i = 0; i < photo_set.length; i++) {
+                console.log(photo_set[i].getAttribute("src"))
+            }
+
+
+
+            //2.把title放到一个数组里 然后把title变成 id_title 的形式 0_Leochens 只在数组中操作即可 不用修改页面 
+            console.log("-------------------------Title 重新构造-------------------------")
+            console.log(U_set.map((it, id) => {
+                return id + '_' + it
+            }))
+
+
+
+            console.log("-------------------------Message类-------------------------")
+
+           
+
+            let msg = new Message("Leochens", "Lalalalla", "12:59", "pppic.png")
+            
+            console.log("默认的值 ")
+            msg.getMessage()
+            console.log("用户设置的值 ")
+
+            msg.setMessage("UserA", "Hello World", "13.08", "hello.png")
+            msg.getMessage()
+
+        }
+   
+        function showItemInConsole(d)
+        {
+            let title = d.getElementsByClassName('user_name')[0].innerHTML
+
+            let description = d.getElementsByClassName('content')[0].innerHTML
+
+            let time = d.getElementsByClassName('time')[0].innerHTML
+
+            let img = d.getElementsByClassName('pic')[0].getAttribute("src")
+
+            console.log("title: "+title)
+            console.log("description "+description)
+            console.log("time "+time)
+            console.log("img "+img)
+
+
+
+            let msg = new Message(title,description,time,img)
+            msg.getMessage()
+        }
+   </script>
 </body>
+
 </html>
